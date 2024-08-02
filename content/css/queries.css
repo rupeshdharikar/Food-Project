@@ -1,0 +1,341 @@
+/* ************************ 
+Smaller Desktop screen (Below 1344px)
+* ************************* */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ************************ 
+Landscape Tablets screen (Below 1200px)
+* ************************* */
+@media (max-width: 75em) {
+  .html {
+    font-size: 56.25%;
+  }
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .heading-tertinary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+    position: relative;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .secondary-heading {
+    font-size: 3.2rem;
+    margin-bottom: 8rem;
+  }
+  .plain-text {
+    line-height: 1.8;
+  }
+}
+/*************************
+61 em for Landscape tablet(976)
+**************************/
+@media (max-width: 61em) {
+  .html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .meal-title {
+    font-size: 2rem;
+  }
+  .meal-content {
+    padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .hero-description {
+    text-align: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featuredin-logos img,
+  .feature-icon {
+    height: 2.4rem;
+  }
+  .feature-icon {
+    width: 2.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .step-number {
+    font-size: 5.4rem;
+  }
+  .plain-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .list-item span {
+    font-size: 1.8rem;
+  }
+  .section-meals {
+    padding: 8rem 0 3.2rem 0;
+  }
+  .testimonials-container {
+    margin-top: 0;
+  }
+  .testimonial-text {
+    font-size: 1.6rem;
+  }
+  .grid--4-cols {
+    gap: 3.2rem;
+  }
+  .grid {
+    column-gap: 2.4rem;
+  }
+  .feature-title {
+    font-size: 2.2rem;
+  }
+  .feature-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .plan-details {
+    font-size: 1.6rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-text-box {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+  .section-cta {
+    padding: 0;
+  }
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+  /* Mobile Navigation */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.95);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+    transform: translateX(100%);
+    /* Hide navigation */
+    /* allow no transition at all */
+    /* display: none; */
+
+    /* 1) hide it visually */
+    opacity: 0;
+    /* 2)Make it unaccesible to mouse and keyboards */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    position: absolute;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav {
+    /* display: none; */
+  }
+  .pricing-plan ul li {
+    display: inline-flex;
+  }
+  /* .btn--full {
+    text-wrap: nowrap;
+  } */
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .pricing-plan {
+    width: 85%;
+  }
+}
+
+/* ************************ 
+Smaller Tablets screen (Below 704px)
+* ************************* */
+
+@media (max-width: 46em) {
+  .featuredin-logos img {
+    height: 2rem;
+    width: auto;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 4.8rem;
+  }
+  .logo-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .pricing-plan {
+    padding: 2.4rem;
+    width: 100%;
+  }
+  .pricing-plan--complete::after {
+    font-size: 1.6rem;
+    padding: 0.3rem, 3rem;
+    top: 6%;
+    right: -15%;
+  }
+}
+/* ************************ 
+Mobile Phones screen (Below 560px)
+* ************************* */
+@media (max-width: 35em) {
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-plan {
+    width: 75%;
+    justify-items: center;
+  }
+  .pricing-plan--starter,
+  .pricing-plan--complete {
+    justify-self: center;
+  }
+  .pricing-plan--complete::after {
+    font-size: 1.2rem;
+    padding: 0.3rem, 3rem;
+    top: 6%;
+    right: -11%;
+  }
+  .hero {
+    padding: 3.2rem 0;
+  }
+  .section-hero {
+    padding: 4.8rem 0;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8rem;
+  }
+  .hero-img-box img {
+    width: 100%;
+  }
+  .featuredin-logos img {
+    height: 1.2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .section-pricing {
+    margin-top: 4.8rem;
+  }
+  main .grid:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .footer {
+    padding: 8rem 0;
+  }
+  .footer-nav {
+    gap: 1.6rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    grid-row: 1;
+    height: 35rem;
+  }
+  .secondary-heading {
+    margin-bottom: 3.2rem;
+  }
+}
